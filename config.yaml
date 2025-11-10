@@ -1,0 +1,16 @@
+model:
+  type: "bert"
+  path: "src/models/bert_model"
+  max_seq_len: 256
+
+data:
+  sample_path: "data/sample_posts.csv"
+  train_path: "data/training_data.csv"
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"
+
+api:
+  port: 5000
+  host: "0.0.0.0"
